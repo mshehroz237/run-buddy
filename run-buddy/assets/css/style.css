@@ -72,7 +72,7 @@ section {
 
 /* Hero Style Start */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url('  background-image: url');
   height: 600px;
   background-size: cover;
   background-position: center;
@@ -266,5 +266,8 @@ section {
 .contact-info a {
   color: #fce138;
 }
+#newcontainer{
+  position: absolute;
 
+}
 /* REACH OUT STYLES END */
