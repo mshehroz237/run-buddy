@@ -45,7 +45,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 10px 15px; 
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -161,7 +161,6 @@ section {
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
-  width: 80%;
 }
 
 .primary-border {
@@ -255,7 +254,6 @@ section {
   flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 0 70%;
 }
 
 .trainer img {
@@ -304,7 +302,6 @@ section {
 
 .contact-info iframe {
   height: 400px;
-  flex: 1 100%;
 }
 
 .contact-info div {
@@ -364,37 +361,56 @@ section {
   display: flex;
 }
 
-@media screen and (max-width: 980px){
-  header{
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
     padding-bottom: 0;
     justify-content: center;
   }
-  header h1{
+
+  header h1 {
     width: 100%;
     text-align: center;
   }
+
   header nav ul {
-    margin-top 20px;
+    margin-top: 20px;
     width: 100%;
     justify-content: center;
   }
-  header nav ul li a{
+
+  header nav ul li a {
     font-size: 20px;
   }
-  footer h2, footer div{
+
+  footer h2, footer div {
     text-align: center;
     width: 100%;
   }
-  .hero-cta, .hero-form{
+
+  .hero-cta, .hero-form {
     width: 100%;
   }
-  .hero-cta{
+  
+  .hero-cta {
     text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+  
+  .trainer {
+    flex: 0 70%;
+  }
+  
+  .contact-info iframe{
+    flex: 1 100%;
   }
 }
 
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-
   section {
     padding: 30px 15px;
   }
@@ -420,11 +436,10 @@ section {
   .step-text {
     flex: 100%;  
   }
-
 }
 
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-
   .hero-form button {
     width: 100%;
   }
@@ -448,7 +463,8 @@ section {
   .contact-info > * {
     flex: 0 100%;
   }
-  .contact-form{
+
+  .contact-form {
     order: 3;
   }
 }
